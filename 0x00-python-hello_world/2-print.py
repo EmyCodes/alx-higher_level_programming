@@ -1,4 +1,2 @@
-#!usr/bin/python3
-var="Programming is building a multilingual puzzle"
-print(f"\"{var}\")
-
+#!/usr/bin/python3
+print("\"Programming is like building a multilingual puzzle")
