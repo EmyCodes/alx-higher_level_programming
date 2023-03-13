@@ -4,9 +4,9 @@ const x = process.argv[2];
 const numOfTimes = parseInt(x);
 
 if (isNaN(numOfTimes)) {
-		console.log('Missing number of occurrences');
+	console.log('Missing number of occurrences');
 } else {
-	for (let i = 0; i < numOfTimes; i++) {
-		console.log(statement);
-	}
+for (let i = 0; i < numOfTimes; i++) {
+console.log(statement);
+}
 }
