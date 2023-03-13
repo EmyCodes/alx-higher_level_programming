@@ -6,7 +6,7 @@ const numOfTimes = parseInt(x);
 if (isNaN(numOfTimes)) {
 		console.log('Missing number of occurrences');
 } else {
-	for (let i = 0; i<numOfTimes; i++) {
+	for (let i = 0; i < numOfTimes; i++) {
 		console.log(statement);
 	}
 }
