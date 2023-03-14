@@ -9,6 +9,10 @@ class Rectangle {
   }
 
   print () {
+    if (!this.width || !this.height) {
+      // Do nothing if width or height is not defined
+      return;
+    }
     for (let i = 0; i < this.height; i++) {
       console.log('X'.repeat(this.width));
     }
