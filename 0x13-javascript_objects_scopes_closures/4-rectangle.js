@@ -8,19 +8,19 @@ class Rectangle {
     this.height = h;
   }
 
-  print() {
+  print () {
     for (let i = 0; i < this.height; i++) {
       console.log('X'.repeat(this.width));
     }
   }
 
-  rotate() {
+  rotate () {
     for (let i = 0; i < this.width; i++) {
       console.log('X'.repeat(this.height));
     }
   }
 
-  double() {
+  double () {
     const doubleWidth = this.width * 2;
     const doubleHeight = this.height * 2;
     for (let i = 0; i < doubleHeight; i++) {
