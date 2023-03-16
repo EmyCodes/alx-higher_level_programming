@@ -1,12 +1,12 @@
 #!/usr/bin/node
-const myObject = {
+let myObject = {
   type: 'object',
   value: 12
 };
 
 console.log(myObject);
 
-const myObject = {
+myObject = {
   type: 'object',
   value: 12,
   incr: function () {
