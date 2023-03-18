@@ -7,11 +7,12 @@ module.exports = class Square extends importedSquare {
   }
 
   charPrint (c) {
-    for (let i = 0; i < this.height; i++) {
-      if (c === undefined) {
-        console.log('X'.repeat(this.width));
-      } else {
-        console.log('C'.repeat(this.width));
+    if (c === undefined) {
+      this.print();
+	//console.log('X'.repeat(this.width));
+    } else {
+	for (let i = 0; i < this.height; i++) {
+          console.log('C'.repeat(this.width));
       }
     }
   }
