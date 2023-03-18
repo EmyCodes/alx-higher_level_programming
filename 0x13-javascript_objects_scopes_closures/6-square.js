@@ -1,7 +1,10 @@
 #!/usr/bin/node
 
 const importedSquare = require('./5-square.js');
-module.exports = class Square extends importedSquare {}
+module.exports = class Square extends importedSquare {
+  constructor (length) {
+    super(length);
+  }
 
   charPrint (c) {
     for (let i = 0; i < this.height; i++) {
