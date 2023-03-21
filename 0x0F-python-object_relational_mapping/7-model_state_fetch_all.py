@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
 	# Looping through states_list to get the list of states
 	for state in states_list:
-		print(state.id, state.name)
+		print("{}: {}".format(state.id, state.name))
 
 	# closing the session
 	session.close()
