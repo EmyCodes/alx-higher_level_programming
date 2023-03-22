@@ -24,13 +24,13 @@ if __name__ == "__main__":
 	session = Session()
 
 	# Interacting with the database by query all state objects that has 'a' as their character  from the database and order by states.id
-	state_object = session.query(State).filter(State.name==sys.argv[4]).order_by(State.id).first()
+	state_object = session.query(State).filter(State.name == sys.argv[4]).order_by(State.id).first()
 
 	# Looping through states_list to get the list of states
-	if state_object is None:
-		print("Not found")
+	if state_object:
+		print(state_object.id)
 	else:
-		print("{}".format(state.id))
-
+		print("Not found")
+		
 	# closing the session
 	session.close()
