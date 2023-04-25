@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // Import fs module
-const fs = require(''fs)
+const fs = require('fs')
 
 // Assign file path
 const filePath = process.argv[2]
