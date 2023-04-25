@@ -12,13 +12,11 @@ request(url, function (error, response, body) {
     console.error(error);
     return;
   }
-  
-  fs.writeFile(filePath, body, 'utf-8', function (error)  {
+
+  fs.writeFile(filePath, body, 'utf-8', function (error) {
     if (error) {
-      console.error(err);
-      return;
+      console.error(error);
     }
     // console.log(`Content of ${url} has been saved to ${filePath}`);
   });
 });
-
