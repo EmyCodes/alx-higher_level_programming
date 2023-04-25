@@ -10,8 +10,8 @@ const fileContent = process.argv[3];
 // prints out the content of the file
 fs.writeFile(filePath, fileContent, 'utf8', function (error) {
   if (error) {
-    console.error(error);
+    console.error(error); // if error, it prints error message
   } else {
-    console.log(fileContent);
+    console.log(fileContent); // if success, it print it out
   }
 });
