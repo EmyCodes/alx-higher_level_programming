@@ -7,7 +7,8 @@ const fs = require('fs');
 const filePath = process.argv[2];
 const fileContent = process.argv[3];
 
-fs.appendFile(filePath, fileContent, 'utf8', function (error) {
+// prints out the content of the file
+fs.writeFile(filePath, fileContent, 'utf8', function (error) {
   if (error) {
     console.error(error);
   } else {
