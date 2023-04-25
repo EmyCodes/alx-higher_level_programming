@@ -12,6 +12,7 @@ request(movieUrl, function (error, response, body) {
   if (error) {
     console.error(error);
   } else {
+    // parsing the file
     const data = JSON.parse(body);
     console.log(data.title);
   }
