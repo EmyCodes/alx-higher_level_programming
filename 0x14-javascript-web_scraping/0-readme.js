@@ -7,9 +7,9 @@ const filePath = process.argv[2]
 
 // Read the file and print its content
 fs.readFile(filePath, 'utf-8', (error, fileContent) => {
-  if (err) {
-    console.error(err);
+  if (error) {
+    console.error(error);
   } else {
-    console.log(data);
+    console.log(fileContent);
   }
 });
