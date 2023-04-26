@@ -4,11 +4,11 @@
 
 const request = require('request');
 
-const BASE_API_URL = 'https://swapi.dev/api';
+const baseApiUrl = 'https://swapi.dev/api';
 
 const movieId = process.argv[2];
 
-const movieUrl = `${BASE_API_URL}/films/${movieId}/`;
+const movieUrl = `${baseApiUrl}/films/${movieId}/`;
 
 request.get(movieUrl, (error, response, body) => {
   // checks for error
