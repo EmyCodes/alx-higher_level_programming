@@ -31,4 +31,3 @@ request.get(movieUrl, (error, response, body) => {
     });
   });
 });
-
